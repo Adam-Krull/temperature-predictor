@@ -1,2 +1,4 @@
 # temperature-predictor
-LSTM model used to analyze a time series of temperatures and make predictions
+LSTM model used to analyze a time series of temperatures and make predictions.
+
+Works with a basic dataset containing the lowest recorded temperature every day. The dataset comes in csv format and is converted to a numpy array. This array is split into train and validation subsets. The train portion is windowed, and each window is tupled with the following value. For example, if the window size was set to 30, this list of 30 values would be tupled with the 31st value in the series. In pseudocode it looks like this ([Values 1-30], [Value 31]). This arrangement of the data is used to train the model by treating the first 30 values as the "x" value, and the 31st value as the answer ("y" value). The model is trained once using a variable learning rate to find the best learning rate for the model. The session is cleared, and the optimal learning rate is used to train the model once more. The trained model makes predictions over the validation dataset, and these predictions are compared to the known values.
