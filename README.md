@@ -5,6 +5,7 @@ LSTM model used to analyze a time series of temperatures and make predictions.
 This notebook should be executed in an environment running Python.
 
 Dependencies -
+
 Tensorflow: Build the deep learning model and train it.  
 Numpy: Organize the data into numpy arrays and split into train/validation subsets.  
 Matplotlib: Visualize the results of the model training and overlay the known temperatures with the predictions.  
