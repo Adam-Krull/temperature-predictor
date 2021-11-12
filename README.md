@@ -4,12 +4,12 @@ LSTM model used to analyze a time series of temperatures and make predictions.
 ## Getting started
 This notebook should be executed in an environment running Python.
 
-Dependencies -
+Dependencies:
 
-Tensorflow: Build the deep learning model and train it.  
-Numpy: Organize the data into numpy arrays and split into train/validation subsets.  
-Matplotlib: Visualize the results of the model training and overlay the known temperatures with the predictions.  
-Csv: Read in the csv file.
+- Tensorflow: Build the deep learning model and train it.  
+- Numpy: Organize the data into numpy arrays and split into train/validation subsets.  
+- Matplotlib: Visualize the results of the model training and overlay the known temperatures with the predictions.  
+- Csv: Read in the csv file.
 
 ## Overview
 The code begins by importing the dependencies and defining a helper function to plot data. The data is downloaded to the temp folder and the csv file is read. The relevant information from the dataset is saved in a couple of lists, which are converted to numpy arrays and then plotted. The dataset is split into train and validation arrays.
